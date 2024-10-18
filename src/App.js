@@ -1,23 +1,22 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
-
+import Label from './Component/Label';
+import PasswordComponent from './Component/PasswordComponent';
+// Hooks
+// state, useEffect, useContext, useReducer, useRef, useMemo, useCallback
 function App() {
+  const [count, setCount] = React.useState(0);
+  const clickHandler = () => {
+    setCount(count + 1);
+  }
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <button onClick = {clickHandler}>
+        Click Me 
+      </button>
+      <p> {count} </p>
+      <Label title = "Enter your Name"/>
+      <PasswordComponent />
     </div>
   );
 }
