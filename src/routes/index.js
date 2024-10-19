@@ -1,13 +1,17 @@
 import StateComponent from '../components/StateComponent';
 import UseContext from '../components/UseContext';
+import UseDefferedHook from '../components/UseDefferedHook';
 import UseEffectComponent from '../components/UseEffectComponent';
 import UseMemoization from '../components/UseMemoization';
 import UseRefHook from '../components/UseRefHook';
 export const routes = [
-    {
-      path: "/use-memoization",
-      element: <UseMemoization />,
-    },
+  {
+    path: "/use-defered-hook",
+    element: <UseDefferedHook />,
+  },{
+    path: "/use-memoization",
+    element: <UseMemoization />,
+  },
     {
       path: "/use-ref-hook",
       element: <UseRefHook />,
