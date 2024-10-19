@@ -5,6 +5,7 @@ export default function Navbar() {
         {label: 'Use Memoization Hook', link : '/use-memoization'},
         {label: 'Use Context Hook', link : '/use-context-hook'},
         {label: 'Use Deferred Hook', link : '/use-deferred-hook'},
+        {label: 'Use Reducer Hook', link : '/use-reducer-hook'},
 ]
 //useDeferredValue
     return (

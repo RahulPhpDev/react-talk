@@ -4,7 +4,12 @@ import UseDefferedHook from '../components/UseDefferedHook';
 import UseEffectComponent from '../components/UseEffectComponent';
 import UseMemoization from '../components/UseMemoization';
 import UseRefHook from '../components/UseRefHook';
+import Todos from '../components/UserReducer/Todos';
 export const routes = [
+  {
+    path: "/use-reducer-hook",
+    element: <Todos />,
+  },
   {
     path: "/use-defered-hook",
     element: <UseDefferedHook />,

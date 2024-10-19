@@ -12,7 +12,9 @@ const router = createBrowserRouter(routes);
 root.render(
   <>
       <Navbar router = {router} />
+      <div className='w-1/2'>
       <RouterProvider router = {router} />
+      </div>
   </>
 );
 
