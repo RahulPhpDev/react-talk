@@ -2,8 +2,9 @@
 import * as React from 'react';
 
  const SearchResult =   ({query}) => {
+    console.log('search result')
     const data = [];
-    for(let i = 0; i < 50000 ; i++) {
+    for(let i = 0; i < 10000 ; i++) {
         data.push( `### ${i} --> ${query}`)
     }
 
@@ -13,4 +14,4 @@ import * as React from 'react';
         query && data?.map(movie => <p > {movie}</p>) 
     )
 };
-export default SearchResult;
+export default React.memo( SearchResult);
